@@ -6,10 +6,10 @@ const app = customExpress()
 
 conexao.connect(erro => {
   if (erro) {
-    console.log(erro)
+    console.log(erro+ 'ERRO BD')
   }
 
-  console.log('conectou no banco')
+  console.log('conectou no BD')
 
   Tabelas.init(conexao)
 })
